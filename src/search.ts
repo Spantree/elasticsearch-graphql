@@ -1,13 +1,12 @@
-import { queryType, objectType, inputObjectType, makeSchema, arg } from "nexus";
+import { objectType, inputObjectType } from "nexus";
 import * as _ from "lodash";
+
 import { Client as ElasticClient } from "@elastic/elasticsearch";
 import { parseResolveInfo } from "graphql-parse-resolve-info";
 
 import {
-  KeywordAggregationsOutput,
   KeywordFilterInput,
   NumericFilterInput,
-  NumericAggregationsOutput,
   SearchMetrics
 } from "../generated/nexus/types";
 

@@ -1,12 +1,3 @@
-import {
-  queryType,
-  objectType,
-  inputObjectType,
-  makeSchema,
-  floatArg,
-  arg
-} from "nexus";
-
 import { NumericAggregationsOutput } from "../generated/nexus/types";
 import * as _ from "lodash";
 

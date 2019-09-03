@@ -1,4 +1,3 @@
-import { queryType, objectType, inputObjectType, makeSchema, arg } from "nexus";
 import * as _ from "lodash";
 
 export const buildKeywordAggs = (
