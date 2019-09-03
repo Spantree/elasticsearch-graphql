@@ -8,7 +8,7 @@ import {
   KeywordFilterInput,
   NumericFilterInput,
   SearchMetrics
-} from "../generated/nexus/types";
+} from "./generated/nexus/types";
 
 import { buildKeywordAggs } from "./keyword";
 

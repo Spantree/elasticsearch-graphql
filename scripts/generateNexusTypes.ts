@@ -6,12 +6,12 @@ import fsExtra from "fs-extra";
 import { SDLConverter } from "nexus/dist/core";
 import { buildSchema } from "graphql";
 
-const nexusTsDir = path.join(__dirname, "..", "generated", "nexus");
+const nexusTsDir = path.join(__dirname, "..", "src", "generated", "nexus");
 
 fsExtra.emptyDirSync(nexusTsDir);
 
 const nexusTsPath = path.join(nexusTsDir, "types.ts");
-fs.writeFileSync(nexusTsPath, "// Generated code\n\n");
+fs.writeFileSync(nexusTsPath, "// Generated Nexus Code from Provided SDL\n\n");
 
 glob("./graphql/*.gql", (err, sdlPaths) => {
     const sdl = sdlPaths

@@ -1,0 +1,10 @@
+export declare const ExtendedStatsAggregationOutput: import("nexus/dist/core").NexusObjectTypeDef<"ExtendedStatsAggregationOutput">;
+export declare const KeywordAggregationsOutput: import("nexus/dist/core").NexusObjectTypeDef<"KeywordAggregationsOutput">;
+export declare const NumericAggregationsOutput: import("nexus/dist/core").NexusObjectTypeDef<"NumericAggregationsOutput">;
+export declare const NumericHistogramBucket: import("nexus/dist/core").NexusObjectTypeDef<"NumericHistogramBucket">;
+export declare const SearchMetrics: import("nexus/dist/core").NexusObjectTypeDef<"SearchMetrics">;
+export declare const StandardDeviationBounds: import("nexus/dist/core").NexusObjectTypeDef<"StandardDeviationBounds">;
+export declare const StatsAggregationOutput: import("nexus/dist/core").NexusObjectTypeDef<"StatsAggregationOutput">;
+export declare const TermAggregationBucket: import("nexus/dist/core").NexusObjectTypeDef<"TermAggregationBucket">;
+export declare const KeywordFilterInput: import("nexus/dist/core").NexusInputObjectTypeDef<"KeywordFilterInput">;
+export declare const NumericFilterInput: import("nexus/dist/core").NexusInputObjectTypeDef<"NumericFilterInput">;

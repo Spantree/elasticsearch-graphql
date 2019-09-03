@@ -1,4 +1,4 @@
-import { NumericAggregationsOutput } from "../generated/nexus/types";
+import { NumericAggregationsOutput } from "./generated/nexus/types";
 import * as _ from "lodash";
 
 export const buildNumericAggs = (
