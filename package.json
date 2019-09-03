@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && ts-node scripts/generateNexusTypes.ts && tsc -d",
+    "lint":
+      "tslint --project tsconfig.json {src,test}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
+    "format": "prettier --write --ignore-path .gitignore {src,.}/{*.ts,*.js}",
     "generate": "ts-node scripts/generateNexusTypes.ts"
   },
   "keywords": [],
