@@ -1,0 +1,13 @@
+type TermAggregationBucket {
+  key: String
+  docCount: Int
+}
+
+type KeywordAggregationsOutput {
+  cardinality: Int
+  terms: [TermAggregationBucket!]!
+}
+
+input KeywordFilterInput {
+  terms: [String!]!
+}

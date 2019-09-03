@@ -1,0 +1,6 @@
+type SearchMetrics {
+  totalHits: Int!
+  hitsQueryTookMillis: Int
+  boundsQueryTookMillis: Int
+  aggsQueryTookMillis: Int
+}

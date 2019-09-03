@@ -1,0 +1,44 @@
+input NumericFilterInput {
+  gte: Float!
+  gt: Float!
+  lte: Float!
+  lt: Float!
+}
+
+type StatsAggregationOutput {
+  count: Int!
+  min: Float!
+  max: Float!
+  avg: Float!
+  sum: Float!
+}
+
+type StandardDeviationBounds {
+  upper: Float!
+  lower: Float!
+}
+
+type ExtendedStatsAggregationOutput {
+  count: Int!
+  min: Float!
+  max: Float!
+  avg: Float!
+  sum: Float!
+  sumOfSquares: Float!
+  variance: Float!
+  stdDeviation: Float!
+  stdDeviationBounds: StandardDeviationBounds!
+}
+
+type NumericHistogramBucket {
+  gte: Float!
+  lt: Float
+  key: Float!
+  docCount: Float!
+}
+
+type NumericAggregationsOutput {
+  stats: StatsAggregationOutput
+  extendedStats: ExtendedStatsAggregationOutput
+  histogram(interval: Float): [NumericHistogramBucket!]!
+}
